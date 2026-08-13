@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
 	
-	//*Faça um programa que leia dois números inteiros e depois os imprima na ordem inversa em que eles foram lidos
+	//*FaÃ§a um programa que leia dois nÃºmeros inteiros e depois os imprima na ordem inversa em que eles foram lidos
     
     int primeiro, segundo, aux;
     
@@ -21,44 +21,47 @@ int main(int argc, char *argv[]) {
     printf("\nValores na ordem inversa:\n%d\n%d\n", primeiro, segundo); //ordem inversa
 
     
-    //Faça um programa que leia um valor do tipo double e depois o imprima na forma de notação científica.
+    //FaÃ§a um programa que leia um valor do tipo double e depois o imprima na forma de notaÃ§Ã£o cientÃ­fica.
     
     double numero; 
     
-    printf("\ninsira o valor do numero para converte-lo em notação cientifica:");
+    printf("\ninsira o valor do numero para converte-lo em notaÃ§Ã£o cientifica:");
     scanf("%le", &numero);
     
     printf("\nO valor em notacao cientifica e: %e", numero);
     
-    //Implemente um programa que leia um número n e mostre na tela o seu valor em base binária (bits).
+    //Implemente um programa que leia um nÃºmero n e mostre na tela o seu valor em base binÃ¡ria (bits).
     
-   int n;
-    int binario = 0;
-    int posicao = 1;
+  int n;
 
-    printf("\nDigite um numero inteiro: ");
+    printf("\nDigite um numero inteiro:");
     scanf("%d", &n);
 
+    int b64 = (n / 64) % 2; 
+    int b32 = (n / 32) % 2; 
+    int b16 = (n / 16) % 2; 
+    int b8  = (n / 8)  % 2;
+    int b4  = (n / 4)  % 2; 
+    int b2  = (n / 2)  % 2; 
+    int b1  = (n / 1)  % 2; 
     
-    for (; n > 0; n = n / 2);
-        int resto = n % 2; 
-        
-        binario = binario + (resto * posicao);
-        posicao = posicao * 10; 
-    
-
-    printf("Em binario: %d\n", binario);
+   printf("Em binario: %d%d%d%d%d%d%d\n", b64, b32, b16, b8, b4, b2, b1);
    
+   /*(URI 1009) FaÃ§a um programa que leia, o salÃ¡rio fixo e o valor total em vendas de um vendedor.
+Sabendo que este vendedor ganha 15% de comissÃ£o sobre suas vendas efetuadas, mostre o total a
+receber no final do mÃªs, com duas casas decimais.*/
    
-   /*(URI 1009) Faça um programa que leia, o salário fixo e o valor total em vendas de um vendedor.
-Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, mostre o total a
-receber no final do mês, com duas casas decimais.*/
-   
-   float salario
-   float comissao
+   float salario, comissao, totalvendido, totalareceber;
+ 
    
    printf("digite seu salario:");
-   scanf("%f", &comissao);
+   scanf("%f", &salario);
+   
+   printf("agora digite ")
+   
+  
+   
+
     
 	return 0;
 }
