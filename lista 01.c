@@ -58,5 +58,33 @@ int main(int argc, char *argv[]) {
 
     printf("TOTAL = R$ %.2lf\n", totalareceber);
 
+    /*Elabore um programa que peça ao usuário para digitar 4 valores. E mostre na tela a soma, a média e o
+produtório desses valores*/
+    
+    float valor1, valor2, valor3, valor4, soma, media, produtorio;
+    
+    
+    
+      printf("digite um numero para efetuarmos o calculo(1/4):");
+      scanf("%f", &valor1);
+    
+    printf("digite mais um numero (2/4):");
+    scanf("%f", &valor2);
+    
+    printf("mais um (3/4):");
+    scanf("%f", &valor3); 
+    
+    printf("ultimo valor(4/4):");
+    scanf("%f", &valor4);
+    
+     soma = valor1 + valor2 + valor3 + valor4;
+    media = soma / 4;
+    produtorio = valor1 * valor2 * valor3 * valor4;
+    
+     printf("\nsoma: %.2f\n", soma);
+    printf("media: %.2f\n", media);
+    printf("produtorio: %.2f\n", produtorio);
+    
+    
     return 0;
 }
