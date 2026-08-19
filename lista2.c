@@ -16,23 +16,37 @@ int main(int argc, char *argv[]) {
 	
 	anodenascimento = anoatual - idade;
 	
-	printf("seu ano de nascimento e: %d", anodenascimento);
+	printf("\nseu ano de nascimento e: %d", anodenascimento);
 	
  /*Leia uma velocidade em km/h (quilômetros por hora) e apresente convertida em m/s (metros por
 segundo). A fórmula de conversão é M = K/36, sendo K a velocidade em km/h e M em m/s*/
 
-printf("exercicio 2");
+printf("\nexercicio 2\n");
     float K, M;
 
-    printf("Digite a velocidade em km/h: ");
+    printf("\nDigite a velocidade em km/h: ");
     scanf("%f", &K);
 
     
     M = K / 3.6;
 
-    printf("Velocidade em m/s: %.2f\n", M);
+    printf("\nVelocidade em m/s: %.2f\n", M);
 
+/*Faça um programa que leia um valor em reais e a cotação do dólar. Em seguida, imprima o valor
+correspondente em dólares.*/
 
+  printf("\nexercicio 3\n");
+  
+float real, resultado, dolar;
+
+  printf("\ndigite o quanto voce quer converter:\n");
+  scanf("%f", &real);
+
+	dolar = 0.19;
+  resultado = real * dolar; //valor do real no dia 19/08( 0,19 corresponde ao valor do real em dolares.)
+  
+  printf("\no resutado em dolar e:%f\n", resultado);
+  
 	
 	return 0;
 }
