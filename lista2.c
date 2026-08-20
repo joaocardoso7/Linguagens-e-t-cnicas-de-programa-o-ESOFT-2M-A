@@ -99,6 +99,7 @@ em uma fábrica, e informe-o expresso no formato horas:minutos:segundos.*/
     printf("exercicio 8\n");
     
     int tempo, horas, minutos, segundos;
+    printf("digite o valor em segundos:")
     scanf("%d", &tempo);
 
      horas = tempo / 3600;
@@ -112,23 +113,21 @@ viagem, ao utilizar um automóvel que faz 12 KM/L. Para isso, ele gostaria que v
 de um simples programa. Para efetuar o cálculo, deve-se fornecer o tempo gasto na viagem (em horas) e
 a velocidade média durante a mesma (em km/h). Assim, pode-se obter distância percorrida e, em
 seguida, calcular quantos litros seriam necessários. Mostre o valor com 3 casas decimais após o ponto.*/
-	printf("exercicio 9:");
-
-    int tempo, velocidade1;
+	  int tempo1, velocidade1;
     double distancia, litros;
-    printf("informe o tempo e a velocidade da sua viagem(separados por espaço):\n");
+    printf("informe o tempo e a velocidade da sua viagem(separados por espaco):");
     
-    scanf("%d %d", &tempo, &velocidade1);
+    scanf("%d %d", &tempo1, &velocidade1);
 
-    distancia = tempo * velocidade1;
+    distancia = tempo1 * velocidade1;
     litros = distancia / 12.0;
 
-    printf("%.3f\n", litros);
-
+    printf("serao gastos: %.3f\n", litros);
+    printf("e a distancia e: %3f metros\n", distancia);
   
 
 //compara 4 valores(professor pediu alteração durante a aula)
- printf("exercicio 10");
+ printf("exercicio 10\n");
 	int a, b, c, d, maior, maior_temp1, maior_temp2;
 	
 	printf("informe os valores a serem comparados:");
