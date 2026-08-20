@@ -107,9 +107,45 @@ em uma fábrica, e informe-o expresso no formato horas:minutos:segundos.*/
 
     printf("%d:%d:%d\n", horas, minutos, segundos);
 
+/*Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos em uma
+viagem, ao utilizar um automóvel que faz 12 KM/L. Para isso, ele gostaria que você o auxiliasse através
+de um simples programa. Para efetuar o cálculo, deve-se fornecer o tempo gasto na viagem (em horas) e
+a velocidade média durante a mesma (em km/h). Assim, pode-se obter distância percorrida e, em
+seguida, calcular quantos litros seriam necessários. Mostre o valor com 3 casas decimais após o ponto.*/
+	printf("exercicio 9:");
+
+    int tempo, velocidade1;
+    double distancia, litros;
+    printf("informe o tempo e a velocidade da sua viagem(separados por espaço):\n");
+    
+    scanf("%d %d", &tempo, &velocidade1);
+
+    distancia = tempo * velocidade1;
+    litros = distancia / 12.0;
+
+    printf("%.3f\n", litros);
+
+  
+
+//compara 4 valores(professor pediu alteração durante a aula)
+ printf("exercicio 10");
+	int a, b, c, d, maior, maior_temp1, maior_temp2;
+	
+	printf("informe os valores a serem comparados:");
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	
+	//conta
+	maior_temp1 = (a+b+abs(a-b))/2;
+	maior_temp2 = (maior_temp1+c+abs(maior_temp1-c))/2;
+	maior = (maior_temp2+d+abs(maior_temp2-d))/2;
+	
+	printf("o maior entre [%d][%d][%d][%d] = %d", a,b,c, d, maior);
+	
+	
     return 0;
 }
     
     
     
 	
+
