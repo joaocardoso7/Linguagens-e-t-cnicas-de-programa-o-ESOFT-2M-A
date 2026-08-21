@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+//codigo para area do circulo, fiz no beecrowd
+    double area, raio, n;
+
+    n = 3.14159;
+
+    
+    scanf("%lf", &raio);
+
+    
+    area = n * raio * raio;
+
+    
+    printf("A=%.4lf\n", area);
+
+    return 0;
+}
