@@ -1,0 +1,126 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(int argc, char *argv[]) {
+    int numero;
+	
+	printf ("\n\n Informe um numero: ");
+	scanf ("%d", &numero);
+	
+	if (numero>0){
+		numero = -numero;
+	}else{
+		numero = numero*numero;
+	}
+	
+	printf ("\n O numero e: %d ", numero);
+	
+	//
+	
+	int n1, sobra;
+	
+	printf ("\n\n Informe um numero: ");
+	scanf ("%d", &n1);
+	
+	sobra = n1%2;
+	if (sobra==0){
+		printf ("PAR");
+	}else{
+		printf ("IMPAR");
+	}
+	
+	//
+	
+	int number, raiz;
+	
+	printf ("\n\n Insira numero: ");
+	scanf ("%d", &number);
+	
+	raiz = sqrt(number);
+	if (raiz * raiz == number){
+	printf ("A raiz e: %d ", raiz);	
+	}else{
+		printf ("ERRO");
+	}
+	
+	//
+	
+	char letra;
+	
+	printf ("\n\n Insira uma letra: ");
+	scanf (" %c", &letra);
+	
+	if (letra == 'a' || letra == 'A')
+	 printf ("%c DE AMOR", letra);
+	 
+	else if (letra == 'b' || letra == 'B')
+	 printf ("%c DE BAIXINHO", letra);
+	 
+	else if (letra == 'c' || letra == 'C')
+	 printf ("%c DE CORACAO", letra);
+	 
+	else if (letra == 'd' || letra == 'D')
+	 printf ("%c DE DOCINHO", letra);
+	 
+	else if (letra == 'e' || letra == 'E')
+	 printf ("%c DE ESCOLA", letra);
+	 
+	else if (letra == 'f' || letra == 'F')
+	 printf ("%c DE FEIJAO", letra);
+	 
+	else if (letra == 'g' || letra == 'G')
+	 printf ("%c DE GENTE", letra);
+	 
+	else if (letra == 'h' || letra == 'H')
+	 printf ("%c DE HUMANO", letra);
+	 
+	else if (letra == 'i' || letra == 'I')
+	 printf ("%c DE IGUALDADE", letra);
+	 
+	else if (letra == 'j' || letra == 'J')
+	 printf ("%c DE JUVENTUDE", letra);
+	 
+	else if (letra == 'l' || letra == 'L')
+	 printf ("%c DE LIBERDADE", letra);
+	 
+	else if (letra == 'm' || letra == 'M')
+	 printf ("%c DE MOLECAGEM", letra);
+	 
+	else if (letra == 'n' || letra == 'N')
+	 printf ("%c DE NATURAEZA", letra);
+	 
+	else if (letra == 'o' || letra == 'O')
+	 printf ("%c DE OBRIGADO", letra);
+	 
+	else if (letra == 'p' || letra == 'P')
+	 printf ("%c DE PROTECAO", letra);
+	 
+	else if (letra == 'q' || letra == 'Q')
+	 printf ("%c DE QUERO QUERO", letra);
+	 
+	else if (letra == 'r' || letra == 'R')
+	 printf ("%c DE RIACHO", letra);
+	
+	else if (letra == 's' || letra == 'S')
+	 printf ("%c DE SAUDADE", letra);
+	 
+	else if (letra == 't' || letra == 'T')
+	 printf ("%c DE TERRA", letra);
+	 
+	else if (letra == 'u' || letra == 'U')
+	 printf ("%c DE UNIVERSO", letra);
+	 
+	else if (letra == 'v' || letra == 'V')
+	 printf ("%c DE VITORIA", letra);
+	 
+	else if (letra == 'x' || letra == 'X')
+	 printf ("%c DE XUXA", letra);
+	 
+	else if (letra == 'z' || letra == 'Z')
+	 printf ("%c DE ZUM, ZUM, ZUM.", letra);
+	 
+	 
+	return 0;
+}
+	
