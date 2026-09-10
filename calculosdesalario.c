@@ -43,9 +43,9 @@ scanf("%f", &salario);
 float inss = calc_inss(salario);
 float base_ir = salario - inss;
 float ir = calc_ir(base_ir);
-printf("%.2f\n", salario);
-printf("%.2f\n", inss);
-printf("%.2f\n", base_ir);
-printf("%.2f\n", ir);
+printf("seu salario e: %.2f\n", salario);
+printf("desconto do INSS: %.2f\n", inss);
+printf("base de calculo do IR: %.2f\n", base_ir);
+printf("desconto do IR: %.2f\n", ir);
     return 0;
 }
