@@ -103,7 +103,7 @@ void exec3() {
     if (media >= 7 && media <= 10) {
         printf("\033[34mO aluno esta APROVADO com media de %.1f\033[0m", media);
     } else if (media >= 4 && media < 7) {
-        faltando = 10 - media;
+        faltando = 7 - media;
         printf("\033[33mO aluno esta em EXAME com media de %.1f, e faltam %.1f pontos para a aprovacao\033[0m", media, faltando);
     } else {
         printf("\033[31mO aluno esta REPROVADO com media de %.1f\033[0m", media);
