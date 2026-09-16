@@ -111,7 +111,7 @@ void exec3() {
 }
 
 void exec5() {
-    // 5. "Terminal Infinity Cash - simulador de saque com menor quantidade de notas."
+    // 5.simulador de saque com menor quantidade de notas."
     int valor, qtd100, qtd50, qtd10, qtd5, qtd2, qtd1;
 
     printf("Digite o valor do saque: ");
