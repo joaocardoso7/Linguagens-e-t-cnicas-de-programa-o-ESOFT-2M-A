@@ -76,7 +76,7 @@ void exercicio3() {
     printf("\n");
 }
 
-/*Faça um programa que leia 10 valores e apresente o maior dos 10 valores lidos seguido da 
+/*ex4 Faça um programa que leia 10 valores e apresente o maior dos 10 valores lidos seguido da 
 mensagem “eh o maior formula: maiorab= (a+b+abs(a-b))/2 */
 void exercicio4() {
     int valores[10];
@@ -93,11 +93,28 @@ void exercicio4() {
     printf("%d eh o maior\n", maior);
 }
 
+/*ex5  Faça um programa que tenha um vetor de 100 inteiros e para cada item do vetor verifique sua paridade e 
+sua primalidade.*/
+void exercicio5() {
+    int numeros[100];
+    printf("Digite 100 numeros inteiros:\n");   
+    for (int i = 0; i < 100; i++) {
+        scanf("%d", &numeros[i]);
+    }
+    for (int i = 0; i < 100; i++) {
+        if (numeros[i] % 2 == 0) {
+            printf("%d eh par\n", numeros[i]);
+        } else {
+            printf("%d eh impar\n", numeros[i]);
+        }
+    }
+}
+
 
 int main(void) {
     int op;
     
-    printf("Digite a opcao desejada (1 para exercicio 1, 2 para exercicio 2, 3 para exercicio 3, 4 para exercicio 4): ");
+    printf("Digite a opcao desejada (1 para exercicio 1, 2 para exercicio 2, 3 para exercicio 3, 4 para exercicio 4, 5 para exercicio 5): ");
     scanf("%d", &op);
     switch (op) {
         case 1:
@@ -112,8 +129,17 @@ int main(void) {
         case 4:
             exercicio4();
             break;
+        case 5:
+            exercicio5();
+            break;
         default:
-            printf("Opcao invalida.\n");
+            while (1) {
+                printf("Opcao invalida. Digite novamente: ");
+                scanf("%d", &op);
+                if (op >= 1 && op <= 5) {
+                    break;
+                }
+            }
             break;
     }
 
