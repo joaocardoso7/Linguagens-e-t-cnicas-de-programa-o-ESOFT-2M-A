@@ -109,12 +109,47 @@ void exercicio5() {
         }
     }
 }
+/* Faça um programa que leia do usuário 4 vetores com 10 posições, correspondentes às coordenadas em 
+um plano cartesiano, p1(x1,y1) e p2(x2,y2) e calcule e mostre a distância entre eles, aplicando a 
+distância euclidiana, segundo a fórmula:  d = √((x₂-x₁)² + (y₂-y₁)²)*/
+void exercicio6() {
+    double x1, y1, x2, y2;
+    printf("Digite as coordenadas do ponto 1 (x1 y1): ");
+    scanf("%lf %lf", &x1, &y1);
+    printf("Digite as coordenadas do ponto 2 (x2 y2): ");
+    scanf("%lf %lf", &x2, &y2);
+
+    double dx = x2 - x1;
+    double dy = y2 - y1;
+    double distancia = sqrt(dx * dx + dy * dy);
+
+    printf("A distância entre os pontos é: %.6f\n", distancia);
+}
+
+/*Faça um programa que receba um vetor de 100 números inteiros do teclado, verifique 
+se em algum dos números presentes no vetor estão em ordem consecutiva, e mostre 
+os valores que estão em ordem consecutiva.*/
+void exercicio7() {
+    int numeros[100];
+    printf("Digite 100 numeros inteiros:\n");
+    for (int i = 0; i < 100; i++) {
+        scanf("%d", &numeros[i]);
+    }
+
+    printf("Valores em ordem consecutiva:\n");
+    for (int i = 0; i < 99; i++) {
+        if (numeros[i] + 1 == numeros[i + 1]) {
+            printf("%d %d\n", numeros[i], numeros[i + 1]);
+        }
+    }
+}
+
 
 
 int main(void) {
     int op;
     
-    printf("Digite a opcao desejada (1 para exercicio 1, 2 para exercicio 2, 3 para exercicio 3, 4 para exercicio 4, 5 para exercicio 5): ");
+    printf("Digite a opcao desejada (1 para exercicio 1, 2 para exercicio 2, 3 para exercicio 3, 4 para exercicio 4, 5 para exercicio 5, 6 para exercicio 6, 7 para exercicio 7 e 8 para sair): ");
     scanf("%d", &op);
     switch (op) {
         case 1:
@@ -132,11 +167,20 @@ int main(void) {
         case 5:
             exercicio5();
             break;
+            case 6:
+            exercicio6();
+            break;
+        case 7:
+            exercicio7();
+            break;
+            case 8:
+            printf("Saindo do programa.\n");
+            break;
         default:
             while (1) {
                 printf("Opcao invalida. Digite novamente: ");
                 scanf("%d", &op);
-                if (op >= 1 && op <= 5) {
+                if (op >= 1 && op <= 8) {
                     break;
                 }
             }
